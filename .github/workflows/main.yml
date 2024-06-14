@@ -17,4 +17,5 @@ jobs:
     - run: |
         mkdir aosp
         cd aosp
+        export PATH=/home/runner/work/test/test/aosp/.repo/repo:$PATH
         repo init -b android-security-10.0.0_r75 -u https://android.googlesource.com/platform/manifest
